@@ -30,3 +30,4 @@ This project was built using Python and the FastAPI web framework with Firebase 
 - Create functions to parse the output from JSON into a well formatted and easy to read output
 - Create way to connect to Spotify or Apple Music api's to create a well rounded media player
 - Overall UI/UX designs to make the app clean and functional 
+- Create functions to delete and update playlists
