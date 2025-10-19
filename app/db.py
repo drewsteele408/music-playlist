@@ -1,7 +1,9 @@
-from firebase_admin import credentials, firestore, initialize_app
 import firebase_admin
+from firebase_admin import firestore, initialize_app
 
 def get_db():
-    if not firebase_admin.apps:
+    try:
+        firebase_admin.get_app()
+    except ValueError: 
         initialize_app()
     return firestore.client()

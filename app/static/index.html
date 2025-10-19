@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Playlist Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>Playlist Manager</h1>
+
+    <div class="row">
+      <label>User ID: <input id="uid" value="andrew"></label>
+      <button id="loadBtn">Load Visible Playlists</button>
+    </div>
+
+    <h2>Create Playlist</h2>
+    <div class="row">
+      <input id="plName" placeholder="Playlist name">
+      <input id="plDesc" placeholder="Description (optional)">
+      <label><input type="checkbox" id="plPublic"> Public</label>
+    </div>
+
+    <h3>Tracks</h3>
+    <div class="row">
+      <input id="tTitle" placeholder="Title">
+      <input id="tArtist" placeholder="Artist">
+      <input id="tDuration" placeholder="Duration (sec)" type="number" min="0">
+      <input id="tUrl" placeholder="External URL (optional)">
+      <button id="addTrackBtn">Add Track</button>
+    </div>
+
+    <table id="tracksTable">
+      <thead><tr><th>#</th><th>Title</th><th>Artist</th><th>Duration</th><th>URL</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <button id="createBtn">Create Playlist</button>
+
+    <h2>Output</h2>
+    <pre id="out"></pre>
+
+  </body>
+</html>
